@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        background-color: salmon;
+
+        .nav-links {
+            position: relative;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+
+        .burger {
+            margin: 20px;
+            cursor: pointer;
+            .burgerbarre {
+                position: relative;
+                display: block;
+                width: 30px;
+                height: 5px;
+                background-color: black;
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 10px;
+                    width: 30px;
+                    height: 5px;
+                    background-color: black;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 10px;
+                    width: 30px;
+                    height: 5px;
+                    background-color: black;
+                }
+            }
+        }
+    }
+}
