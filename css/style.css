@@ -4,13 +4,6 @@ body {
 
 body .navbar {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   background-color: salmon;
 }
 
@@ -32,14 +25,36 @@ body .navbar .nav-links {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.5rem;
+  padding: 0;
 }
 
-body .navbar .burger {
+body .navbar .navtitre-burger {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .navbar .navtitre-burger h1 {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .navbar .navtitre-burger .burger {
   margin: 20px;
   cursor: pointer;
 }
 
-body .navbar .burger .burgerbarre {
+body .navbar .navtitre-burger .burger .burgerbarre {
   position: relative;
   display: block;
   width: 30px;
@@ -47,7 +62,7 @@ body .navbar .burger .burgerbarre {
   background-color: black;
 }
 
-body .navbar .burger .burgerbarre::after {
+body .navbar .navtitre-burger .burger .burgerbarre::after {
   content: "";
   position: absolute;
   left: 0;
@@ -57,7 +72,7 @@ body .navbar .burger .burgerbarre::after {
   background-color: black;
 }
 
-body .navbar .burger .burgerbarre::before {
+body .navbar .navtitre-burger .burger .burgerbarre::before {
   content: "";
   position: absolute;
   left: 0;
